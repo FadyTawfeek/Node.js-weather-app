@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Home </title>
+    <link rel="icon" href="/img/aa.jpg">
+<!-- href can have the relative path staring with ./css/ or the absolute path from the public folder this html is in, starting with /css/ -->
+    <link rel="stylesheet" href="/css/styles.css">
+    
+
+</head>
+
+<body>
+    <div>
+        {{>header}}
+        
+        <form>
+            <input placeholder="Enter location">
+            <button> Search </button>
+        </form>
+
+        <p id="msg-1"></p>
+        <p id="msg-2"></p>
+
+    </div>
+    
+    
+    {{>footer}}
+    <script src="/js/app.js"> </script>
+</body>
+
+
+</html>

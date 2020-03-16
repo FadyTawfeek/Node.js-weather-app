@@ -1,0 +1,2 @@
+node_modules/
+# make a .gitignore file in the root directory of the project, and in the file type the folder or file name we do not want git to upload like the node_modules/ folder
