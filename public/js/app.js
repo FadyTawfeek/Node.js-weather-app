@@ -14,7 +14,7 @@ weatherForm.addEventListener('submit', (e) => { //listener has 2 params, first i
     msg1.textContent = 'Loading...'
     msg2.textContent = ''
 
-    fetch('http://localhost:3000/weather?address=' + searchLocationValue).then((response) => { //all the response coming from this link will be stored in data variable, which has error, address_entered, location etc
+    fetch('/weather?address=' + searchLocationValue).then((response) => { //all the response coming from this link will be stored in data variable, which has error, address_entered, location etc
         response.json().then((data) => {
             if (data.error) {
                 msg1.textContent = 'Sorry'
